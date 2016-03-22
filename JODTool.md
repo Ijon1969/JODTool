@@ -9,6 +9,7 @@
 * [プロジェクトの作成](#プロジェクトの作成)
 * [ファイルの追加](#ファイルの追加)
 * [フォーマルな用語辞書の設定](#フォーマルな用語辞書の設定)
+* [自然言語テキストの分析](#自然言語テキストの分析)
 * [要求文書の読み込み](#要求文書の読み込み)
 * [自然言語による要求の整理](#自然言語による要求の整理)
     * [キーフレーズの抽出](#キーフレーズの抽出)
@@ -117,6 +118,8 @@ Work with のところで，欄右の▽をクリックし[JODTool](http://aofa.
 
 ![ディスクからの削除選択](deleteProjectFromDisc.png)
 
+**このチュートリアルでは VDM-SL のプロジェクトを作成し， Chemical Plant 等の名前をつける**
+
 ##ファイルの追加
 
  [Overture tools](http://overturetool.org) のプロジェクトに既存のファイルを追加するには， VDM Explorer 上のプロジェクトを選択し，右クリックで Import... -> File System と選択し，
@@ -130,8 +133,6 @@ Work with のところで，欄右の▽をクリックし[JODTool](http://aofa.
 ![ファイル選択](browseFolder.png)
 
 同様に Import -> Existing Projects into Workspace を選択し，エクスポートしたプロジェクトをインポートすることもできる．
-
-このチュートリアルで使用する [Modelling Systems](http://overturetool.org/publications/books/ms2/) の化学プラント要求記述は，[英語版](RequirementE.txt)と[日本語版](RequirementJ.txt)があるので，適当な場所へダウンロードしてプロジェクトへ追加する．
 
 ##フォーマルな用語辞書の設定
 
@@ -172,7 +173,7 @@ Work with のところで，欄右の▽をクリックし[JODTool](http://aofa.
 
 ![New Button on Dictionary View](newDic.png)
 
-新規に作成した辞書も Default という名前になるので，上述の手順によりプロパティを設定する．
+新規に作成した辞書も Default という名前になるので，上述の手順により辞書名，プロパティを設定する．
 
 既存の辞書を開く場合は， Dictionary View 右上にあるツールバーの Open File ボタンを押す．
 
@@ -183,33 +184,34 @@ Work with のところで，欄右の▽をクリックし[JODTool](http://aofa.
 ![辞書の指定](loadDic.png)
 
 一つのプロジェクトで目的の異なる複数の辞書を同時に開いて用いることも可能である．
-
  VDM Explorer 上でフォーマルな用語辞書を開こうとすると辞書データが XML としてエディタで表示されてしまうので，注意が必要である．
 
-## 自然言語テキストの分析
+**このチュートリアルでは辞書名を ChemicalPlant.jdd 等とし，問題領域を化学プラント警報システム，プロジェクト名を AOFA, 入力言語を en と jp, 出力モデルを VDM-SL とする．**
 
-### 仕様書エディタでテキストを開く
+##自然言語テキストの分析
+
+##要求文書の読み込み
 
 自然言語で記述された要求は，ソフトウェア開発の出発点である．
- [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) は，自然言語による plain text または，特定のフォーマットの Excel ファイルを読み込むことができる．
+ [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) は，自然言語による plain text または html または，特定のフォーマットの Excel ファイルを読み込むことができる．
 文字コードは UTF-8 を想定しており，言語には依存しない．
 
-最初に分析対象となる自然言語記述を，[ファイル追加](#addFile)の手順によりプロジェクトに追加する．
- VDM Explorer はデフォルトでテキストファイルを Textfile Editor で開くので， [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) を使用するためには，プロジェクトに追加した自然言語による要求ファイルを， VDM Explorer 上で選択し，右クリックで Open with -> Other ... を選択し，
+最初に分析対象となる自然言語記述を，[ファイル追加](#ファイルの追加)の手順によりプロジェクトに追加する．
 
-![自然言語によるテキストファイルを開く](openRFC.png)
+**このチュートリアルで使用する [Modelling Systems](http://overturetool.org/publications/books/ms2/) の化学プラント要求記述は，[英語版](RequirementE.txt)と[日本語版](RequirementJ.txt)があるので，適当な場所へダウンロードしてプロジェクトへ追加する．**
 
-ここで Specification Editor を指定する．
+VDM Explorer はデフォルトでテキストファイルを Textfile Editor で開いてしまうので， [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) を使用するためには，プロジェクトに追加した自然言語による要求ファイルを， VDM Explorer 上で選択し，右クリックで Open with -> Other ... を選択し，仕様書エディター (Specification Editor) を指定する．
+
+![自然言語によるテキストファイルを開く](openText.png)
 
 ![仕様書エディタを指定](selectSpecEditor.png)
 
-メニューバーに Verification(日本語化パックを導入している場合は「検証」) が追加されていれば， Specification Editor が使われていることが確認できる．
-
+仕様書エディターが使われているかどうかは，メニューバーに「検証」 (Verification) が追加されていれば， Specification Editor が使われていることが確認できる．
 ひとつのプロジェクトにおいて，複数の自然言語記述ファイルを同時に開くことも可能である．
 
 ## 自然言語による意味定義
 
-### フォーマルな用語辞書
+## フォーマルな用語辞書
 
 フォーマルな用語辞書は自然言語サイドと VDM サイドがあり，自然言語サイドは Entry, sub keyword, conjugation, classification, informal definition からなる．
 
