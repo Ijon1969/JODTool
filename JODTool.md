@@ -2,7 +2,7 @@
 
 ## 目次
 
-* [この文書について](#leadings)
+* [この文書について](#この文書の目的)
 * [ JODTool とは](#abstract)
 * [ JODTool のインストール](#install)
 * [ツール画面](#GUI)
@@ -19,7 +19,7 @@
 * [モデルの改良](#refineVDM)
 * [まとめ](#summary)
 
-##<a id="leadings">この文書の目的</a>
+##この文書の目的
 
 この文書は  [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) を追加した [Overture tools](http://overturetool.org) による VDM モデル記述方法の解説である．
 つまり， [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) 単独の説明ではなく，簡単な [Overture tools](http://overturetool.org) の使い方も含めて説明する．
