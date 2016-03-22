@@ -2,9 +2,8 @@
 
 ## 目次
 
-* [この文書について](#この文書の目的)
-* [ JODTool とは](#abstract)
-* [ JODTool のインストール](#install)
+* [JODTool とは](#JODTool とは)
+* [JODTool のインストール](#JODTool のインストール)
 * [ツール画面](#GUI)
 * [プロジェクトの作成](#setupPRJ)
 * [ファイルの追加](#addFile)
@@ -19,20 +18,18 @@
 * [モデルの改良](#refineVDM)
 * [まとめ](#summary)
 
-##この文書の目的
+##JODTool とは
+
+[JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) は VDM モデルの要素と RFP(Request For Proposal) など自然言語による記述を対応づけるフォーマルな用語辞書の管理ツールであり， [Overture tools](http://overturetool.org) 上で動作する．
+最新版は [JODTool のサイト](http://aofa.csce.kyushu-u.ac.jp/JODTool) よりダウンロード可能である．
 
 この文書は  [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) を追加した [Overture tools](http://overturetool.org) による VDM モデル記述方法の解説である．
 つまり， [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) 単独の説明ではなく，簡単な [Overture tools](http://overturetool.org) の使い方も含めて説明する．
  [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) はプレーンな [Eclipse](http://eclipse.org) 上にセットアップし単独での利用も可能であるが， [Overture tools](http://overturetool.org) との協調により大きな効果を発揮する．
+
+##JODTool のインストール
+
 動作している [Overture tools](http://overturetool.org) に [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) をインストールするのは容易である．
-
-##<a name="abstract"> JODTool とは</a>
-
-[JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) は VDM モデルの要素と RFP(Request For Proposal)など自然言語による記述を対応づけるフォーマルな用語辞書の管理ツールであり， [Overture tools](http://overturetool.org) 上で動作する．
-最新版は [JODTool のサイト](http://aofa.csce.kyushu-u.ac.jp/JODTool) よりダウンロード可能である．
-
-##<a name="install">インストール</a>
-
 まず [Overture tools のダウンロードサイト](http://overturetool.org/download/) から利用環境に応じたバイナリをダウンロードし，インストールする．
 最新の安定版は 2.3.2 であり， MacOS X, Windows(32 ビット， 64 ビット), Linux(32 ビット， 64 ビット) をサポートする．
  [Overture tools](http://overturetool.org) は [Eclipse](http://eclipse.org) のプラグインであり，それぞれの環境で動作する JRE/JDK が必要である．
@@ -42,18 +39,19 @@
 
  [Overture tools](http://overturetool.org)-2.3.0 から標準で新規ソフトウェア追加の場所として [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) のサイトが登録されている．
 したがって，ネットワーク接続が有効な場合，わずかな手間で [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) が利用できる．
+
 すなわち， [Overture tools](http://overturetool.org) を起動し，メニューバーから Help -> Install New Software... と進み，
 
-[![新規ソフトウェア追加](addSoftware_part.png)](addSoftware.png)
+![新規ソフトウェア追加](newSoftware.png)
 
-Work with のところで，欄右の▽から[JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) を選択する．
+Work with のところで，欄右の▽をクリックし[JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) を選択する．
 
 ![JODTool選択](selectJOD.png)
 
 続いて， Name 欄でインストールするパッケージを選択する．
-日本語化パックは，メニューなどを日本語化するもので必要に応じて選択する．
+日本語化パックは，メニューなどを日本語化するオプションである．
 
-![パッケージ選択](feature.png)
+![パッケージ選択](selectFeature.png)
 
 以下，ウィザードに沿って進めればインストールが完了する<a id="rfootnote1">[1](#footnote1)</a>．
 
@@ -62,21 +60,21 @@ Work with のところで，欄右の▽から[JODTool](http://aofa.csce.kyushu-
 ネットワーク接続が利用できない場合，予めダウンロードした [JODTool.zip](http://aofa.csce.kyushu-u.ac.jp/JODTool/JODTool.zip) を展開し，メニューバーから Help -> Install New Software... と進み， Work with のところで新規ソフトウェア追加元として，展開したフォルダを指定する．
 以下，オンラインインストールの場合と同じである．
 
-インストール後にメニューバーから Help -> About Overture Tools -> installation detail を選択したとき，
+作業後に[Overture tools](http://overturetool.org) を再起動し，メニューバーから Help -> About Overture Tools -> installation detail を選択したとき，
 
 ![インストール済みソフトウェア](confirmed.png)
 
-のように表示されていれば成功である．
+のように表示されていればインストールは成功している．
 
 ## ツール画面
 
- [Overture tools](http://overturetool.org) の画面構成は個々の機能に対応した表示部である View の集合である Perspective と呼ばれる．
-
- VDM 記述で利用する VDM Perspective はファイラーである VDM Explorer ，編集作業を行う Editor, Dictionary, Dictionary Editor の各 View からなる．
+ [Overture tools](http://overturetool.org) の画面構成は個々の機能に対応した表示部であるビューの集合であるパースペクティブと呼ばれる．
+ VDM 記述で利用する VDM パースペクティブはファイラーである VDM Explorer, 編集作業を行う Editor, Dictionary, Dictionary Editor の各ビューからなる．
 
 ![[Overture tools](http://overturetool.org) 画面](GUI.png)
 
-なんらかの理由で表示されていない view がある場合，メニューバーから Window -> Show View -> Others と選択し，Requirement Model Conversion Tool から辞書に関する View を指定する．
+なんらかの理由で表示されていない view がある場合，メニューバーから Window -> Show View -> Others と選択し，Requirement Model Conversion Tool から辞書に関する View を指定すればよい．
+出現時に他のビューに隠れている場合もあるので注意する．
 
 ![ View の追加](addView.png)
 
@@ -355,7 +353,7 @@ Work with のところで，欄右の▽から[JODTool](http://aofa.csce.kyushu-
 
 
 
-<a id="footnote1">[1]</a>: 安定版を公開するまでライセンス，署名は一時的に空欄となっているので，それぞれ accept してほしい．([return](#rfootnote1))
+<a id="footnote1">[1]</a>: 安定版を公開するまでライセンス，署名は一時的に空欄となっているので，それぞれ accept, OK してほしい．([return](#rfootnote1))
 
 <a id="footnote2">[2]</a>: ここで日本語といっているのは，他の言語はよくわからないという意味であり，他の言語ではないという意味ではない．英語にも性質は異なるが記述スタイルの問題はある．([return](#rfootnote2))
 
