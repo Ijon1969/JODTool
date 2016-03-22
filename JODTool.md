@@ -351,30 +351,47 @@ VDM Explorer はデフォルトでテキストファイルを Textfile Editor �
 ##見出しに対応するＶＤＭの要素記述
 
 自然言語についての検討を基に VDM モデルを記述する．
+ここでは， RFC に書かれていない情報についても抽象化や補完により，見出しとして追加する．
 
-**この例では，以下の type と function を定義する．
-センサーの処理はモデル化の過程で捨てられている．**
+![型の定義追加](addFMData.png)
 
-　| Types | Functions |
-　|:-------------------|:-------------------|
-　| Plant | ExpertToPage |
-　| Qualification | ExpertIsOnDuty |
-　|Alarm | NumberOfExperts |
-　|Period | |
-　|Expert | |
-　|Description |  |
+**この例では，以下の type と function を定義する．**
+
+* **Types : Plant, Qualification, Alarm, Period, Expert, Description **
+* **Functions : ExpertToPage, ExpertIsOnDuty, NumberOfExperts**
+
+**センサーの処理はモデル化の過程で捨てられている．**
+**また，追加された Schedule は system database を抽象化したものと言える．**
+
+ Edit のカラムをチェックすると， Dictionary Editor ビューにより見出しの編集が可能となる．
+
+**ここでは，[Modelling Systems](http://overturetool.org/publications/books/ms2/) の手順に沿って，最初に型の定義を追加し，次に関数の定義を追加する．**
+
+![陰仕様定義](ImplicitFM.png)
+
+さらに， VDM の定義を見なおして，不変条件や事前条件・事後条件を追加する．
 
 ##検証可能なモデルの出力と文法および型検査による検証
 
+ Dictionary ビューにある Output Model ボタンを押すことにより，フォーマルな用語辞書に定義された VDM の要素を [Overture tools](http://overturetool.org) で検証可能な形式で出力できる．
+全ての要素を書く前に検証可能な形式で出力するには，出力を抑止する行の Output のカラムをチェックする．
+ 「Output」 の欄をチェックすると，全体の出力を抑止できる．
+このとき，辞書は Output Mode になっている必要がある．
+
+![選択的な出力抑止](outputFM.png)
+
+検証可能な形式での出力ファイルの拡張子は，フォーマルな用語辞書に設定された出力モデルの言語に応じて， vdmsl(VDM-SL), vdmpp(VDM++), vdmrt(VDM-RT) となる．
+出力した VDM ファイルは [Overture tools](http://overturetool.org) の機能により，即座に文法検査，型検査される．
+それぞれの言語のエディターで修正した内容をフォーマルな用語辞書の VDM による意味定義へ反映させ，再度出力して検査する作業を繰り返すことで，型検査済みの VDM の要素と自然言語記述を対応づけることができる．
 
 ##モデルの実行
 
-[JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) の
+ VDM モデルが陽仕様の場合，
 
-
+![陽仕様定義](addFMData.png)
 
 ##モデルの改良
-
+ [Overture tools](http://overturetool.org) の機能
 
 
 
