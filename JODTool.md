@@ -342,7 +342,7 @@ VDM Explorer はデフォルトでテキストファイルを Textfile Editor �
 
  VDM による意味定義はフォーマルな用語辞書を用いて
 
-* [見出しに対応する VDM の要素記述](#見出しに対応する VDM の要素記述)
+* [見出しに対応する VDM の要素記述](#見出しに対応するＶＤＭの要素記述)
 
 * [検証可能なモデルの出力と文法および型検査による検証](#検証可能なモデルの出力と文法および型検査による検証)
 
@@ -352,17 +352,17 @@ VDM Explorer はデフォルトでテキストファイルを Textfile Editor �
 
 自然言語についての検討を基に VDM モデルを記述する．
 
-**この例では，以下の type と function を定義する**
-**センサーの処理はモデル化の過程で捨てられている**
+**この例では，以下の type と function を定義する．
+センサーの処理はモデル化の過程で捨てられている．**
 
- | Types | Functions |
- |:-------------------|:-------------------|
- | Plant | ExpertToPage |
- | Qualification | ExpertIsOnDuty |
- |Alarm | NumberOfExperts |
- |Period | |
- |Expert | |
- |Description |  |
+　| Types | Functions |
+　|:-------------------|:-------------------|
+　| Plant | ExpertToPage |
+　| Qualification | ExpertIsOnDuty |
+　|Alarm | NumberOfExperts |
+　|Period | |
+　|Expert | |
+　|Description |  |
 
 ##検証可能なモデルの出力と文法および型検査による検証
 
