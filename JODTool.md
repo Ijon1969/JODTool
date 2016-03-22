@@ -2,23 +2,24 @@
 
 ## 目次
 
-* [JODTool とは](# JODTool とは)
-* [JODTool のインストール](# JODTool のインストール)
+* [JODTool とは](#ＪＯＤＴｏｏｌとは)
+* [JODTool のインストール](#ＪＯＤＴｏｏｌのインストール)
 * [ツール画面](#ツール画面)
+* [仕様記述開始](#仕様記述開始)
 * [プロジェクトの作成](#プロジェクトの作成)
-* [ファイルの追加](#addFile)
-* [フォーマルな用語辞書の設定](#setupFRD)
-* [要求文書の読み込み](#openRFC)
-* [自然言語による要求の整理](#analyzeNL)
- * [キーフレーズの抽出](#selectKP)
- * [キーフレーズの自然言語による定義](#defineKPbyNL)
- * [キーフレーズの構造定義，関連整理](#constructKP)
-* [ VDM による意味定義](#defineVDM)
+* [ファイルの追加](#ファイルの追加)
+* [フォーマルな用語辞書の設定](#フォーマルな用語辞書の設定)
+* [要求文書の読み込み](#要求文書の読み込み)
+* [自然言語による要求の整理](#自然言語による要求の整理)
+ * [キーフレーズの抽出](#キーフレーズの抽出)
+ * [キーフレーズの自然言語による定義](#キーフレーズの自然言語による定義)
+ * [キーフレーズの構造定義，関連整理](#キーフレーズの構造定義，関連整理)
+* [ VDM による意味定義](#ＶＤＭによる意味定義)
 * [実行可能モデルの実行](#executeVDM)
 * [モデルの改良](#refineVDM)
 * [まとめ](#summary)
 
-## JODTool とは
+##ＪＯＤＴｏｏｌとは
 
 [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) は VDM モデルの要素と RFP(Request For Proposal) など自然言語による記述を対応づけるフォーマルな用語辞書の管理ツールであり， [Overture tools](http://overturetool.org) 上で動作する．
 最新版は [JODTool のサイト](http://aofa.csce.kyushu-u.ac.jp/JODTool) よりダウンロード可能である．
@@ -27,7 +28,7 @@
 つまり， [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) 単独の説明ではなく，簡単な [Overture tools](http://overturetool.org) の使い方も含めて説明する．
  [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) はプレーンな [Eclipse](http://eclipse.org) 上にセットアップし単独での利用も可能であるが， [Overture tools](http://overturetool.org) との協調により大きな効果を発揮する．
 
-## JODTool のインストール
+##ＪＯＤＴｏｏｌのインストール
 
 動作している [Overture tools](http://overturetool.org) に [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) をインストールするのは容易である．
 まず [Overture tools のダウンロードサイト](http://overturetool.org/download/) から利用環境に応じたバイナリをダウンロードし，インストールする．
