@@ -1,0 +1,16 @@
+Imagine that you are developing a system that manages the calling out of experts to deal with operational faults discovered in a chemical plant.
+
+The plant is equipped with sensors that are able to raise alarms in response to conditions in the plant.
+When an alarm is raised, an expert must be called to the scene.
+Experts have different qualifications for coping with different kinds of alarms.
+It has been decided to produce a model to ensure that the rulues concerning the duty schedule and the calling out of experts are correctly understood and implemented.
+The individual requirements are laelled R1, R8 for further reference.
+
+R1. A computer-based system is to be developed to manage the alarms of this plant.
+R2. Four kinds of qualifications are needed to cope with the alarms: electrical, mechanical, biological,and chemical.
+R3. There must be experts on duty during all periods allocated in the system.
+R4. Each expert can have a list of qualifications.
+R5. Each alarm reported to the system has a qualification associated with it along with a description of the alarm that can be understood by the expert.
+R6. Whenever an alarm is received by the system an expert with the right qualification should be found so that he or she can be paged.
+R7. The experts should	 be able to use the system database to check when they will be on duty.
+R8. It must be possible to assess the number o f experts on duty.

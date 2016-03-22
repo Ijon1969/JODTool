@@ -124,13 +124,14 @@ Work with のところで，欄右の▽をクリックし[JODTool](http://aofa.
 ![ファイル追加](importFile.png)
 
 指定したディレクトリ(フォルダ) から選択したファイルを選択したプロジェクトへ追加できる．
+ファイル追加の際には事前にプロジェクトを作成しておく必要がある．
  Browse... ボタンを押すとマウスによる操作も可能である．
 
 ![ファイル選択](browseFolder.png)
 
 同様に Import -> Existing Projects into Workspace を選択し，エクスポートしたプロジェクトをインポートすることもできる．
 
-ファイル追加の時にプロジェクトを作ることはできないので，事前にプロジェクトを作成しておく必要がある．
+このチュートリアルで使用する [Modelling Systems](http://overturetool.org/publications/books/ms2/) の化学プラント要求記述は，[英語版](RequirementE.txt)と[日本語版](RequirementJ.txt)があるので，適当な場所へダウンロードしてプロジェクトへ追加する．
 
 ##フォーマルな用語辞書の設定
 
@@ -139,29 +140,29 @@ Work with のところで，欄右の▽をクリックし[JODTool](http://aofa.
 
 ![辞書名変更](renameDic.png)
 
-次に Dictionary View 右上にあるツールバーの i ボタンを押し，辞書のプロパティを設定する．
+次に Dictionary View 右上にあるツールバーの i ボタンを押し，辞書情報タブからプロパティを設定する．
 
-![Info Button on Dictionary View](DicView.png)
+![Dictionary View のツールバー](setupDic.png)
 
-辞書のプロパティのうち， Project Domain はモデル化対象の問題領域名， Project Name は辞書を利用する組織名，Input Language は入力となる自然言語， Output Model は出力となる VDM の各言語を設定する．
+辞書のプロパティのうち，問題領域はモデル化対象の問題領域名，プロジェクト名は辞書を利用する組織名，入力言語は入力となる自然言語，出力モデルは出力となる VDM の各言語を設定する．
 
 ![辞書プロパティ設定](infoDic.png)
 
-* Project Domain はモデル化対象の問題領域名であり，任意の文字列を入力できる．
+* 問題領域　(Problem Domain)　はモデル化対象の問題領域名であり，任意の文字列を入力できる．
 モデル記述者が辞書を再利用する際のヒントなどが期待される．
 デフォルトは空で省略可能である．
 
-* Project Name は辞書を利用する組織名であり，任意の文字列を入力できる．
+* プロジェクト名 (Project Name) は辞書を利用する組織名であり，任意の文字列を入力できる．
 同じ対象であっても異なる組織では異なる辞書が利用され得ることから，辞書を使う場合のヒントとして期待される．
 デフォルトは空で省略可能である．
 
-* Input Language は入力となる自然言語である．
- Language Setting... から 2 letter で選択することができる． 
-最大 5 つの入力言語を設定可能であり，入力言語に応じてフォーマルな用語辞書の Informal Definition のコラムが拡張される．
+* 入力言語 (Input Language) は入力となる自然言語である．
+言語設定 (Language Setting...) から 2 letter code で選択することができる． 
+最大 5 つの入力言語を設定可能であり，入力言語に応じてフォーマルな用語辞書の非形式的定義 (Informal Definition) のコラムが拡張される．
 複数の自然言語による RFC に対して，同じ VDM 記述要素を対応させることにより，ある概念を異なる自然言語間で VDM を介して対応づけることができる．
 デフォルトは OS の言語である．
 
-* Output Model は出力となる VDM の記述言語である VDM-SL, VDM++, VDM-RT のいずれかを選択する．
+* 出力モデル (Output Model) は出力となる VDM の記述言語である VDM-SL, VDM++, VDM-RT のいずれかを選択する．
 当然，この言語は保存先のプロジェクトと一致していることが期待される．
 
 プロパティを設定した辞書は各プロジェクトのフォルダに保存しておくのがお勧めである．
@@ -169,17 +170,17 @@ Work with のところで，欄右の▽をクリックし[JODTool](http://aofa.
 
 新規に辞書を作成するには Dictionary View 右上にあるツールバーの New ボタンを押す．
 
-![New Button on Dictionary View](DicView.png)
+![New Button on Dictionary View](newDic.png)
 
 新規に作成した辞書も Default という名前になるので，上述の手順によりプロパティを設定する．
 
 既存の辞書を開く場合は， Dictionary View 右上にあるツールバーの Open File ボタンを押す．
 
-![Open File Button on Dictionary View](DicView.png)
+![Open File Button on Dictionary View](openDic.png)
 
 辞書の選択ウィンドウが表示されるので，対象のプロジェクトを選択し，辞書を指定する．
 
-![辞書の指定](loadDictionary.png)
+![辞書の指定](loadDic.png)
 
 一つのプロジェクトで目的の異なる複数の辞書を同時に開いて用いることも可能である．
 
