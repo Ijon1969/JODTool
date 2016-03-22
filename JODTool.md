@@ -2,10 +2,10 @@
 
 ## 目次
 
-* [JODTool とは](#JODTool とは)
-* [JODTool のインストール](#JODTool のインストール)
-* [ツール画面](#GUI)
-* [プロジェクトの作成](#setupPRJ)
+* [JODTool とは](# JODTool とは)
+* [JODTool のインストール](# JODTool のインストール)
+* [ツール画面](#ツール画面)
+* [プロジェクトの作成](#プロジェクトの作成)
 * [ファイルの追加](#addFile)
 * [フォーマルな用語辞書の設定](#setupFRD)
 * [要求文書の読み込み](#openRFC)
@@ -18,7 +18,7 @@
 * [モデルの改良](#refineVDM)
 * [まとめ](#summary)
 
-##JODTool とは
+## JODTool とは
 
 [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) は VDM モデルの要素と RFP(Request For Proposal) など自然言語による記述を対応づけるフォーマルな用語辞書の管理ツールであり， [Overture tools](http://overturetool.org) 上で動作する．
 最新版は [JODTool のサイト](http://aofa.csce.kyushu-u.ac.jp/JODTool) よりダウンロード可能である．
@@ -27,7 +27,7 @@
 つまり， [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) 単独の説明ではなく，簡単な [Overture tools](http://overturetool.org) の使い方も含めて説明する．
  [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) はプレーンな [Eclipse](http://eclipse.org) 上にセットアップし単独での利用も可能であるが， [Overture tools](http://overturetool.org) との協調により大きな効果を発揮する．
 
-##JODTool のインストール
+## JODTool のインストール
 
 動作している [Overture tools](http://overturetool.org) に [JODTool](http://aofa.csce.kyushu-u.ac.jp/JODTool) をインストールするのは容易である．
 まず [Overture tools のダウンロードサイト](http://overturetool.org/download/) から利用環境に応じたバイナリをダウンロードし，インストールする．
@@ -66,7 +66,7 @@ Work with のところで，欄右の▽をクリックし[JODTool](http://aofa.
 
 のように表示されていればインストールは成功している．
 
-## ツール画面
+##ツール画面
 
  [Overture tools](http://overturetool.org) の画面構成は個々の機能に対応した表示部であるビューの集合であるパースペクティブと呼ばれる．
  VDM 記述で利用する VDM パースペクティブはファイラーである VDM Explorer, 編集作業を行う Editor, Dictionary, Dictionary Editor の各ビューからなる．
@@ -80,9 +80,11 @@ Work with のところで，欄右の▽をクリックし[JODTool](http://aofa.
 
 ![辞書に関する View の追加](addView2.png)
 
-## 仕様記述開始
+##仕様記述開始
 
-### プロジェクトの作成
+インストールが終わっている場合，プロジェクト作成から始める．
+
+## プロジェクトの作成
 
  [Overture tools](http://overturetool.org) では，異なる開発対象のモデル記述をプロジェクトという単位で管理する．
 新規プロジェクトを開始するにはメニューバーから File -> New -> Other と進むか， VDM Explorer 上で右クリック (MacOS X では Ctrl+クリック，以下同様) することで， VDM の各言語プロジェクトを作成できる．
