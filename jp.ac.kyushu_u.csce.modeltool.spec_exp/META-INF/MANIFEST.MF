@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: jp.ac.kyushu_u.csce.modeltool.spec_exp;singleton:=true
+Bundle-Version: 2.2.3.v20160331
+Bundle-Activator: jp.ac.kyushu_u.csce.modeltool.specExp.ModelToolSpecExpPlugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ jp.ac.kyushu_u.csce.modeltool.base,
+ jp.ac.kyushu_u.csce.modeltool.dictionary,
+ jp.ac.kyushu_u.csce.modeltool.explorer
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Export-Package: jp.ac.kyushu_u.csce.modeltool.specExp
+Bundle-Localization: plugin

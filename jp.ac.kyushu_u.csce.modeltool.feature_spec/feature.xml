@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="jp.ac.kyushu_u.csce.modeltool.feature_spec"
+      label="Specification Modeling Tool (Exp, Dic &amp; Spec Editor)"
+      version="2.2.3.v20160331">
+
+   <description url="http://www.example.com/description">
+      [ここにフィーチャーの説明を入力してください。]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [ここに Copyright の説明を入力してください。]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [ここにライセンスの説明を入力してください。]
+   </license>
+
+   <plugin
+         id="jp.ac.kyushu_u.csce.modeltool.spec"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jp.ac.kyushu_u.csce.modeltool.dictionary"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jp.ac.kyushu_u.csce.modeltool.base"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jp.ac.kyushu_u.csce.modeltool.dictionary_exp"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jp.ac.kyushu_u.csce.modeltool.explorer"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="jp.ac.kyushu_u.csce.modeltool.spec_exp"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

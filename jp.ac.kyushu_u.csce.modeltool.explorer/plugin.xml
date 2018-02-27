@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="explorerExtension" name="explorerExtension" schema="schema/explorerExtension.exsd"/>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            category="jp.ac.kyushu_u.csce.modeltool.viewcategory"
+            class="jp.ac.kyushu_u.csce.modeltool.explorer.explorer.ExplorerView"
+            icon="icons/etool/explorer.gif"
+            id="jp.ac.kyushu_u.csce.modeltool.explorerview"
+            name="%view.name"
+            restorable="true">
+      </view>
+   </extension>
+</plugin>

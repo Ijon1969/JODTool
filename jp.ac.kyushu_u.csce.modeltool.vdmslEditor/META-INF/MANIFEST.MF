@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: jp.ac.kyushu_u.csce.modeltool.vdmslEditor;singleton:=true
+Bundle-Version: 2.2.3.v20160331
+Bundle-Activator: jp.ac.kyushu_u.csce.modeltool.vdmslEditor.ModelToolVdmslEditorPlugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text,
+ org.eclipse.ui.editors,
+ jp.ac.kyushu_u.csce.modeltool.base,
+ jp.ac.kyushu_u.csce.modeltool.explorer,
+ jp.ac.kyushu_u.csce.modeltool.dictionary
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
+Bundle-Localization: plugin
