@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Requirement Model Conversion Tool (Japanese Language Pack)
+Bundle-SymbolicName: jp.ac.kyushu_u.csce.modeltool.vdmrt.nl_ja
+Bundle-Version: 2.2.3.v20160331
+Fragment-Host: jp.ac.kyushu_u.csce.modeltool.vdmrt;bundle-version="2.2.3"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

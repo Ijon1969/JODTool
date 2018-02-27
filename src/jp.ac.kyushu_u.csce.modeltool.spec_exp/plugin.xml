@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="jp.ac.kyushu_u.csce.modeltool.explorer.explorerExtension">
+      <fileExtension
+            editorId="jp.ac.kyushu_u.csce.modeltool.speceditor"
+            extensions="txt, xls, xlsx, html">
+      </fileExtension>
+   </extension>
+</plugin>
